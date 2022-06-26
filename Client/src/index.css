@@ -1,0 +1,106 @@
+
+h1{
+  margin: 0;
+  text-align: center;
+}
+
+.header{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.header div{
+  display: flex;
+  align-items: center;
+}
+
+.header div span {
+  padding-left: 10px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.body-header{
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  border-left: 3px solid rgb(219, 213, 213);
+  padding: 0 10px;
+}
+
+.body-data{
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.label-input{
+  display: flex;
+  padding: 10px;
+  position: relative;
+}
+
+.label-input p{
+  margin: 0;
+  padding: 3px;
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+
+.label-input span{
+  position: absolute;
+  bottom: -10px;
+  left: 165px;
+  color: red;
+  font-size: 13px;
+}
+
+.label-input label{
+  width: 150px;
+}
+
+.label-input input{
+  outline: none;
+  flex: 1;
+}
+
+.form-btn{
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding: 15px 15px 0 15px;
+}
+
+.form-select {
+  padding: 10px;
+}
+
+.form-select label{
+  width: 150px;
+  display: inline-block;
+}
+
+.pagination{
+  display: flex;
+  padding-top: 25px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width:450px) {
+  .label-input{
+    flex-direction: column;
+  }
+  .label-input span{
+    left: 10px;
+  }
+}
